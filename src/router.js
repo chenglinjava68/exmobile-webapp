@@ -13,6 +13,21 @@ export default new Router({
       component: () => import(/* webpackChunkName: "Home" */ './views/Home'),
     },
     {
+      path: '/category',
+      name: 'Category',
+      component: () => import(/* webpackChunkName: "Category" */ './views/Category'),
+    },
+    {
+      path: '/group',
+      name: 'Group',
+      component: () => import(/* webpackChunkName: "Group" */ './views/Group'),
+    },
+    {
+      path: '/shopcart',
+      name: 'ShopCart',
+      component: () => import(/* webpackChunkName: "ShopCart" */ './views/ShopCart'),
+    },
+    {
       path: '/mine',
       name: 'Mine',
       component: () => import(/* webpackChunkName: "Mine" */ './views/Mine'),
