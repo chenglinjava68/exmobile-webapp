@@ -1,12 +1,16 @@
 <template>
   <div id="app">
-    <router-view />
+    <RouterView />
+    <Tabbar />
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
+  components: {
+    Tabbar: () => import(/* webpackChunkName: "Tabbar.Component" */ '@/components/Tabbar'),
+  },
 };
 </script>
 
