@@ -4,8 +4,8 @@
 
 <script>
 export default {
-  name: 'ShopCart',
-};
+  name: 'ShopCart'
+}
 </script>
 
 <style lang="scss" scoped>

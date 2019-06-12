@@ -4,8 +4,8 @@
 
 <script>
 export default {
-  name: 'Mine',
-};
+  name: 'Mine'
+}
 </script>
 
 <style lang="scss" scoped>

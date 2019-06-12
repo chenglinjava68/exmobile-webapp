@@ -9,9 +9,9 @@
 export default {
   name: 'App',
   components: {
-    Tabbar: () => import(/* webpackChunkName: "Tabbar.Component" */ '@/components/Tabbar'),
-  },
-};
+    Tabbar: () => import(/* webpackChunkName: "Tabbar.Component" */ '@/components/Tabbar')
+  }
+}
 </script>
 
 <style lang="scss">
