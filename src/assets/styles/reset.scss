@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ol, ul, li, button {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+html, body {
+  height: 100%;
+  color: #333;
+  font-family: Roboto, "Open Sans", sans-serif;
+  font-size: 100%;
+  line-height: 1;
+  text-size-adjust: 100%;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f7f7f7;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a, a:active, a:hover, a:focus {
+  text-decoration: none;
+  backface-visibility: hidden;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+q:after,
+q:before {
+  content: '';
+}
+
+input {
+  border: none;
+  appearance: none;
+  outline: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999;
+}
+
+/* 解决input的type="number"在部分手机端会出现一个小按钮 */
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+  /* 去除系统默认appearance的样式,常用于IOS下移除原生样式 */
+  appearance: none;
+}
