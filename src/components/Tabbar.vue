@@ -37,6 +37,14 @@ export default {
       }
     }
   },
+  watch: {
+    '$route' () {
+      this.TABBAR_CHANGED_SHOW({
+        type: TABBAR_CHANGED_SHOW,
+        show: this.tabbarItemList.some(item => item.to === this.$route.path)
+      })
+    }
+  },
   created () {
     this.TABBAR_CHANGED_SHOW({
       type: TABBAR_CHANGED_SHOW,
