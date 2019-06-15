@@ -1,6 +1,6 @@
 <template>
   <div class="Tabbar" v-show="show">
-    <van-tabbar v-model="active" route safe-area-inset-bottom>
+    <van-tabbar v-model="active" active-color="#96358C" route safe-area-inset-bottom>
       <van-tabbar-item
         v-for="item of tabbarItemList"
         :key="item.name"
