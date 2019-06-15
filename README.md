@@ -1,5 +1,7 @@
 # exmobile-webapp
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ppokemon/exmobile-webapp.svg)](https://greenkeeper.io/)
+
 ## Project setup
 ```
 yarn install
