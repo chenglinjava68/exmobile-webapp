@@ -13,7 +13,7 @@ export default {
       },
       {
         name: '分类',
-        icon: 'home-o',
+        icon: 'apps-o',
         dot: false,
         info: '',
         to: '/category',
@@ -21,7 +21,7 @@ export default {
       },
       {
         name: '拼团',
-        icon: 'home-o',
+        icon: 'bag-o',
         dot: false,
         info: '',
         to: '/group',
@@ -29,7 +29,7 @@ export default {
       },
       {
         name: '购物车',
-        icon: 'home-o',
+        icon: 'shopping-cart-o',
         dot: false,
         info: '',
         to: '/shopcart',
@@ -37,7 +37,7 @@ export default {
       },
       {
         name: '我的',
-        icon: 'home-o',
+        icon: 'user-o',
         dot: false,
         info: '',
         to: '/mine',
