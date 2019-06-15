@@ -1,4 +1,6 @@
-export default {
+import { TABBAR_CHANGED_ACTIVE, TABBAR_CHANGED_SHOW } from '@/constant/MutationType'
+
+export const state = {
   Tabbar: {
     active: 0,
     show: false,
@@ -45,4 +47,21 @@ export default {
       }
     ]
   }
+}
+
+export const getters = {
+
+}
+
+export const mutations = {
+  [TABBAR_CHANGED_ACTIVE] (state, payload) {
+    state.Tabbar.active = payload.active
+  },
+  [TABBAR_CHANGED_SHOW] (state, payload) {
+    state.Tabbar.show = payload.show
+  }
+}
+
+export const actions = {
+
 }

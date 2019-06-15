@@ -2,9 +2,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import createLogger from 'vuex/dist/logger'
-import state from './state'
-import actions from './actions'
-import mutations from './mutations'
+import { state, mutations, actions } from './main'
 import * as modules from './modules'
 
 Vue.use(Vuex)
@@ -21,10 +19,10 @@ const store = new Vuex.Store({
 })
 
 if (module.hot) {
-  module.hot.accept(['./mutations', './state', './actions', './modules'], () => {
-    const newState = require('./state').default
-    const newActions = require('./actions').default
-    const newMutations = require('./mutations').default
+  module.hot.accept(['./modules', './main'], () => {
+    const newState = require('./main').state
+    const newActions = require('./main').actions
+    const newMutations = require('./main').mutations
     const { Home } = require('./modules')
     store.hotUpdate({
       state: newState,
